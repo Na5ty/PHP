@@ -40,10 +40,14 @@
 
     echo "<br>";
     //print the sum of numbers 1 to 100
+    $sum = 0;
     for($m = 1; $m <= 100; $m++){
         $sum += $m;
     }
     echo $sum . "<br>";
+
+    //print the sum of numbers 1 to 100 again but nicer
+    echo array_sum(range(1, 100)) . "<br>";
 
     //associative arrays
     $name = array ("name" => "Alice", "age" => 25, "city" => "Paris");
@@ -51,4 +55,11 @@
     foreach($name as $x => $y){
         echo "$x: $y <br>";
     }
+
+    //reverse output a string
+    $str = "hello";
+    for($i = strlen($str) - 1; $i >=0; $i--){
+        echo $str[$i];
+    }
+    echo "<br>";
 ?>
