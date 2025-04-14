@@ -24,4 +24,29 @@
     echo ($test3 ? 'true' : 'false') . "<br>";
     echo ($test4 ? 'true' : 'false') . "<br>";
     echo ($test5 ? 'true' : 'false') . "<br>";
+
+
+    //exercise
+
+    //find and fix the logical errors
+    $val1 = true;
+    $val2 = false;
+    $val3 = true;
+
+    $result = $val1 || $val2 && $val3; 
+    echo ($result ? 'true' : 'false') . "<br>";  // Expected: true
+
+    $result = !($val1 xor ($val2 || !$val3));  
+    echo ($result ? 'true' : 'false') . "<br>";  // Expected: false
+
+    //
+    // $val1 = true;
+    // $val2 = false;
+    // $val3 = true;
+
+    // $result = $val1 || ($val2 && $val3); 
+    // echo ($result ? 'true' : 'false') . "<br>"; 
+
+    // $result = !($val1 xor ($val2 || !$val3));  no need to change anything
+    // echo ($result ? 'true' : 'false') . "<br>"; 
 ?>
