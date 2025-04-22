@@ -1,0 +1,17 @@
+{
+    "name": "dci-student/login-proj",
+    "autoload": {
+        "psr-4": {
+            "DciStudent\\LoginProj\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Na5ty",
+            "email": "thomas.zeides@web.de"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
